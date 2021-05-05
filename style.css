@@ -12,68 +12,72 @@
     font-kerning: auto;
     font-weight: bolder;
 }
-.font1{
+
+.font1 {
     font-family: larsseit;
 }
 
-.font2{
+.font2 {
     font-family: circular pro;
 }
-html{
+
+html {
     scroll-behavior: smooth;
     height: -webkit-fill-available;
 }
-body{
+
+body {
     margin: 1rem auto auto auto;
 }
 
 
 
 
-.navbar{
+.navbar {
     box-shadow: 0 0 2rem rgba(33, 122, 223, 0.479);
     background-color: rgb(221, 248, 243) !important;
     transition: top .5s;
 }
-.navbar-brand{
+
+.navbar-brand {
     font-family: larsseit;
     font-size: xx-large;
 }
 
 
 
-.navbar-nav{
+.navbar-nav {
     font-family: circular pro;
     font-size: inherit;
     font-weight: bolder !important;
 }
 
-.gradiant{
+.gradiant {
     background-color: #21D4FD;
     background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-    
+
 
 }
 
-.unselectable{
+.unselectable {
     user-select: none;
 }
 
-.headerclass{
-   
+.headerclass {
 
 
-display: flex;
- flex-direction: column;
- justify-content: center;
 
-position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
     height: 100vh !important;
-  width: 100%;
+    width: 100%;
 
 }
 
-.wavesvg{
+.wavesvg {
     background-image: url(images/wave.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,25 +90,125 @@ position: relative;
 
 }
 
-.zoom-animation{
-    max-width: 70%; 
+.zoom-animation {
+    max-width: 70%;
     box-shadow: 0px 0px 10px #0707077c !important;
     border-radius: 1%;
     transition: transform .2s;
 }
-.zoom-animation:hover{
+
+.zoom-animation:hover {
 
     -ms-transform: scale(1.04);
     -webkit-transform: scale(1.04);
-    transform : scale(1.04);
+    transform: scale(1.04);
     box-shadow: rgba(0, 0, 0, 0.726) 0px 7px 29px 0px !important;
 }
 
-.navbar-nav li{
+.navbar-nav li {
     list-style: none;
     display: inline-block;
     position: relative;
 }
+
+
+.timelinehistory {
+    
+    margin-top: 2rem;
+    text-align: center;
+    color: #009fda;
+}
+
+.timelinegraph ul li .time h4 {
+    font-size: 1rem;
+}
+.timelinegraph ul li .content h4 {
+    font-size: 1.2rem;
+}
+
+.timelinegraph {
+    position: relative;
+    width: 70%;
+    text-align: start;
+
+}
+
+.timelinegraph:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #c5c5c5;
+}
+
+.timelinegraph ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5rem;
+}
+
+.timelinegraph ul li {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.timelinegraph ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.timelinegraph ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.timelinegraph ul li:nth-child(odd):before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    top: 24px;
+    right: -6px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(223, 12, 188, 0.2);
+    background: #009fda
+}
+
+.timelinegraph ul li:nth-child(even):before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    top: 24px;
+    left: -5px;
+    ;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(223, 12, 188, 0.2);
+    background: #009fda
+}
+
+.timelinegraph ul li:nth-child(odd) .time h4 {
+    position: absolute;
+    top: 17px;
+    right: -60px;
+
+
+}
+
+.timelinegraph ul li:nth-child(even) .time h4 {
+    position: absolute;
+    top: 17px;
+    left: -60px;
+
+}
+
+
 /*
 .nav-linkcustom:before{
     content: "" !important;
@@ -122,16 +226,15 @@ position: relative;
     width: 100%;
 }*/
 
-@media (max-width: 1000px)
-{
-    html{
+@media (max-width: 1000px) {
+    html {
         font-size: 85%;
     }
 }
 
 @media (max-width:450px) {
 
-    .wavesvg{
+    .wavesvg {
         background-image: url(images/wave.svg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -141,27 +244,26 @@ position: relative;
         bottom: 0;
         right: 0;
         z-index: 1;
-    
+
     }
 
-    .navbar-brand{
+    .navbar-brand {
         font-family: larsseit;
-        font-size:larger;
+        font-size: larger;
     }
 
-    .lottie-player lottie-player{
+    .lottie-player lottie-player {
         width: 18rem !important;
         height: 18rem !important;
     }
-    .reduce-h2{
+
+    .reduce-h2 {
         font-size: 2.4rem !important;
     }
-    .reduce-h4{
+
+    .reduce-h4 {
         font-size: 1rem !important;
     }
 }
 
-@media (max-width: 768px)
-{
-    
-}
+@media (max-width: 768px) {}
