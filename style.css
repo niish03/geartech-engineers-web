@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'larsseit';
+    src: url(fonts/Larsseit-Bold.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'circular pro';
+    src: url(fonts/AvenirLTStd-Medium.otf);
+    font-style: normal;
+    font-kerning: auto;
+    font-weight: bolder;
+}
+.font1{
+    font-family: larsseit;
+}
+
+.font2{
+    font-family: circular pro;
+}
+
+
+
+.navbar{
+    box-shadow: 0 0 2rem rgba(33, 122, 223, 0.479);
+    background-color: rgb(221, 248, 243) !important;
+    transition: top .5s;
+}
+.navbar-brand{
+    font-family: larsseit;
+    font-size: xx-large;
+}
+
+
+
+.navbar-nav{
+    font-family: circular pro;
+    font-size: inherit;
+    font-weight: bolder !important;
+}
+
+.gradiant{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
+.unselectable{
+    user-select: none;
+}
+
+.headerclass{
+   
+   
+
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+  min-height: 100vh;
+  width: 100%
+}
+
+.wavesvg{
+bottom: 0 !important;
+margin-bottom: 0 !important;
+
+position: absolute
+
+}
+
+.zoom-animation{
+    max-width: 70%; 
+    box-shadow: 0px 0px 10px #0707077c !important;
+    border-radius: 1%;
+    transition: transform .2s;
+}
+.zoom-animation:hover{
+
+    -ms-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    transform : scale(1.04);
+    box-shadow: rgba(0, 0, 0, 0.726) 0px 7px 29px 0px !important;
+}
+
+.navbar-nav li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-linkcustom:before{
+    content: "" !important;
+    background-color: rgb(221, 219, 88) !important;
+    position: absolute !important;
+    height: 2px !important;
+    width: 0% !important;
+    left: 0 !important;
+    top: 100% !important;
+    transition: all linear .3s;
+}
+
+.nav-linkcustom:hover:before{
+    background-color: #009fda;
+    width: 100%;
+}
+
+@media (max-width: 1000px)
+{
+    html{
+        font-size: 85%;
+    }
+}
+
+@media (max-width:450px) {
+
+    
+    .navbar-brand{
+        font-family: larsseit;
+        font-size:larger;
+    }
+
+    .lottie-player lottie-player{
+        width: 18rem !important;
+        height: 18rem !important;
+    }
+    .reduce-h2{
+        font-size: 2.4rem !important;
+    }
+    .reduce-h4{
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 768px)
+{
+    
+}
