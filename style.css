@@ -153,7 +153,7 @@ display: flex;
 @media (max-width: 768px)
 {
     .wavesvg{
-        background-image: url(images\wave.svg);
+        background-image: url(images/wave.svg);
         background-repeat: no-repeat;
         background-size: cover;
         height: 15vh;
