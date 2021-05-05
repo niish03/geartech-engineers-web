@@ -19,7 +19,9 @@
 .font2{
     font-family: circular pro;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 .navbar{
