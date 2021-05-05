@@ -11,13 +11,18 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
-$(document).ready(function () {
-  $(document).click(function (event) {
-      var click = $(event.target);
-      var _open = $(".navbar-collapse").hasClass("show");
-      if (_open === true && !click.hasClass("navbar-toggler")) {
-          $(".navbar-toggler").click();
-      }
+$(function(){ 
+  var navMain = $(".navbar-collapse"); // avoid dependency on #id
+  // "a:not([data-toggle])" - to avoid issues caused
+  // when you have dropdown inside navbar
+  navMain.on("click", "a:not([data-toggle])", null, function () {
+      navMain.collapse('hide');
   });
 });
 
+
+$(function () {
+  $('.navbar-collapse ul li a:not(.dropdown-toggle)').bind('click touchstart', function () {
+          $('.navbar-toggle:visible').click();
+  });
+});
