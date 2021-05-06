@@ -92,18 +92,10 @@ body {
 
 .zoom-animation {
     max-width: 70%;
-    box-shadow: 0px 0px 10px #0707077c !important;
-    border-radius: 1%;
-    transition: transform .2s;
+    
 }
 
-.zoom-animation:hover {
 
-    -ms-transform: scale(1.04);
-    -webkit-transform: scale(1.04);
-    transform: scale(1.04);
-    box-shadow: rgba(0, 0, 0, 0.726) 0px 7px 29px 0px !important;
-}
 
 .navbar-nav li {
     list-style: none;
