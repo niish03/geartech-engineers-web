@@ -28,6 +28,7 @@ html {
 
 body {
     margin: 1rem auto auto auto;
+    
 }
 
 
@@ -203,6 +204,32 @@ body {
 
 }
 
+.hours-calc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hours-container{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+}
+.card{
+    width: 160px !important;
+    height: 180px;
+overflow: hidden;
+    margin:2rem;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.030) 0px 0px 20px 5px ;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /*
 .nav-linkcustom:before{
