@@ -13,11 +13,11 @@
     font-weight: bolder;
 }
 
-.font1 {
+.mainfont {
     font-family: larsseit;
 }
 
-.font2 {
+.subfont {
     font-family: circular pro;
 }
 
@@ -111,25 +111,27 @@ body {
     position: relative;
 }
 
+.timeline{
+   text-align: center;
+   margin-top: 1.2rem;
 
-.timelinehistory {
-    
-    margin-top: 2rem;
-    text-align: center;
-    color: #009fda;
 }
+
+
 
 .timelinegraph ul li .time h4 {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .timelinegraph ul li .content h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .timelinegraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 70%;
-    text-align: start;
+    overflow: hidden;
 
 }
 
@@ -152,7 +154,8 @@ body {
     list-style: none;
     position: relative;
     width: 50%;
-    padding: 20px 40px;
+    padding: 20px 20px;
+    
     box-sizing: border-box;
 }
 
@@ -230,6 +233,8 @@ body {
     html {
         font-size: 85%;
     }
+
+    
 }
 
 @media (max-width:450px) {
