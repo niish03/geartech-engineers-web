@@ -106,7 +106,7 @@ body {
 
 .timeline{
    text-align: center;
-   margin-top: 1.2rem;
+   margin-top: 5rem;
 
 }
 
@@ -205,6 +205,7 @@ body {
 }
 
 .hours-calc{
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
