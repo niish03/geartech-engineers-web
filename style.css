@@ -232,6 +232,31 @@ overflow: hidden;
     align-items: center;
 }
 
+.card-rect{
+    width: 300px !important;
+    height: 90px;
+    margin: 1rem;
+overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.030) 0px 0px 20px 5px ;
+    border: none;
+    display: flex;
+    
+    justify-content: start;
+    align-items: center;
+}
+
+.card-rect i{
+    border-radius: 0.2rem; color: black; background-color: rgba(100, 133, 241, 0.199);
+    transition: 0.3s;
+}
+
+
+.card-rect:hover i {
+background: rgb(100, 133, 241);
+color: white;
+transition: 0.3s;
+}
+
 /*
 .nav-linkcustom:before{
     content: "" !important;
