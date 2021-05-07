@@ -259,6 +259,25 @@ color: white;
 transition: 0.3s;
 }
 
+.product-card{
+    width: 250px;
+    height: 350px;
+    border-radius: 1rem;
+    margin: 1rem;
+overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.068) 0px 0px 20px 5px ;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.product-img{
+    width: 280px;
+    
+}
+
 /*
 .nav-linkcustom:before{
     content: "" !important;
