@@ -28,8 +28,10 @@ html {
 
 body {
     margin: 1rem auto auto auto;
+    user-select: none;
     
 }
+
 
 
 
