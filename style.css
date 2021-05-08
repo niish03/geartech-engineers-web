@@ -35,7 +35,9 @@ body {
 
 
 
-
+.logo{
+    max-height: 48px;
+}
 
 .navbar {
     box-shadow: 0 0 2rem rgba(33, 122, 223, 0.479);
@@ -438,8 +440,9 @@ overflow: hidden;
   }
   
   .footer .footer-top .footer-info .logo {
-    line-height: 0;
+    
     margin-bottom: 15px;
+
   }
   
   .footer .footer-top .footer-info .logo img {
@@ -448,15 +451,17 @@ overflow: hidden;
   }
   
   .footer .footer-top .footer-info .logo span {
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: 700;
-    letter-spacing: 1px;
+    
     color: #012970;
     font-family: "Nunito", sans-serif;
     margin-top: 3px;
+    
   }
   
   .footer .footer-top .footer-info p {
+      text-align: justify;
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;
@@ -630,6 +635,10 @@ overflow: hidden;
 
     .reduce-h4 {
         font-size: 1rem !important;
+    }
+
+    .logo{
+        max-height: 25px;
     }
 }
 
