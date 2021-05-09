@@ -520,6 +520,7 @@ overflow: hidden;
   }
   
   .footer .footer-top .footer-contact p {
+    user-select:text;
     line-height: 26px;
   }
   
@@ -535,7 +536,7 @@ overflow: hidden;
     font-size: 13px;
     color: #012970;
   }
-  
+
 
   .back-to-top {
     position: fixed;
