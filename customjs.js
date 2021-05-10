@@ -21,7 +21,31 @@ $(document).ready(function() {
   });  
 });
 
+jQuery('#contactform').on('submit' , function(e){
+  jQuery.ajax({
+    url:'firebase-php/index.php',
+    type:'post', 
+    data : jQuery('#contactform').serialize(),
+    success: function(result){
+    alert(result);
+  } 
+});
 
+e.preventDefault();
+});
+
+const onscroll = (el, listener) => {
+  el.addEventListener('scroll', listener)
+}
+
+const select = (el, all = false) => {
+  el = el.trim()
+  if (all) {
+    return [...document.querySelectorAll(el)]
+  } else {
+    return document.querySelector(el)
+  }
+}
 let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
