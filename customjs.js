@@ -23,7 +23,7 @@ $(document).ready(function() {
 
 jQuery('#contactform').on('submit' , function(e){
   jQuery.ajax({
-    url:'firebase-php/index.php',
+    url:'https://safe-fortress-41631.herokuapp.com/datasend.php',
     type:'post', 
     data : jQuery('#contactform').serialize(),
     success: function(result){
