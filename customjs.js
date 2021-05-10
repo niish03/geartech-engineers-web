@@ -23,6 +23,7 @@ $(document).ready(function() {
 
 jQuery('#contactform').on('submit' , function(e){
   jQuery('#submit').attr("value","Please wait...");
+  jQuery('#submit').attr("disabled","true");
   
   jQuery.ajax({
     
