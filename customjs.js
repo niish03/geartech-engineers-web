@@ -27,7 +27,7 @@ jQuery('#contactform').on('submit' , function(e){
     type:'post', 
     data : jQuery('#contactform').serialize(),
     success: function(result){
-    alert(result);
+    
   } 
 });
 
