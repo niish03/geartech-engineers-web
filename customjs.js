@@ -30,7 +30,7 @@ jQuery('#contactform').on('submit' , function(e){
     type:'post', 
     data : jQuery('#contactform').serialize(),
     success: function(result){
-      
+      jQuery('#submit').attr("value","Send message");
   } 
 });
 
