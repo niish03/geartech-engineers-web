@@ -22,10 +22,8 @@ $(document).ready(function() {
 });
 
 jQuery('#contactform').on('submit' , function(e){
-  jQuery('submit').prop("disabled", true);
   jQuery('#submit').attr("value","Please wait...");
-  jQuery('#submit').css("background","#9099f0ce");
-  
+  document.getElementsByClassName("submit").disabled = true;
   
   jQuery.ajax({
     
@@ -33,13 +31,8 @@ jQuery('#contactform').on('submit' , function(e){
     type:'post', 
     data : jQuery('#contactform').serialize(),
     success: function(result){
-      
-      
-      
-      jQuery('#submit').css("background","#4154f1");
       jQuery('#submit').attr("value","Send message");
-      jQuery('#submit').prop("disabled", false);
-      
+      document.getElementsByClassName("submit").disabled = false;
 
   } 
 });
