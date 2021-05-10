@@ -22,7 +22,7 @@ $(document).ready(function() {
 });
 
 jQuery('#contactform').on('submit' , function(e){
-  $('submit').prop('disabled', true);
+  jQuery('submit').prop('disabled', true);
   jQuery('#submit').attr("value","Please wait...");
   jQuery('#submit').css("background","#9099f0ce");
   
@@ -38,7 +38,7 @@ jQuery('#contactform').on('submit' , function(e){
       
       jQuery('#submit').css("background","#4154f1");
       jQuery('#submit').attr("value","Send message");
-      $('#submit').prop('disabled', false);
+      jQuery('#submit').prop('disabled', false);
       
 
   } 
