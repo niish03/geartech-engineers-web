@@ -22,21 +22,16 @@ $(document).ready(function() {
 });
 
 jQuery('#contactform').on('submit' , function(e){
-  
   jQuery('#submit').attr("value","Please wait...");
-  document.getElementsByClassName("submit").disabled = true;
-  
-  
+  jQuery('#submit').css("background","#9099f0ce");
   jQuery.ajax({
     
     url:'https://safe-fortress-41631.herokuapp.com/datasend.php',
     type:'post', 
     data : jQuery('#contactform').serialize(),
     success: function(result){
-      
+      jQuery('#submit').css("background","#4154f1");
       jQuery('#submit').attr("value","Send message");
-      document.getElementsByClassName("submit").disabled = false;
-      
 
   } 
 });
