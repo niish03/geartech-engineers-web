@@ -395,7 +395,14 @@ overflow: hidden;
 
 .contact .php-email-form input[type="submit"]:hover {
   background: #5969f3;
+  
 }
+
+.contact .php-email-form input[type="submit"]:disabled {
+  background: #6c77f183;
+  
+}
+
 
 .footer {
   
