@@ -22,9 +22,10 @@ $(document).ready(function() {
 });
 
 jQuery('#contactform').on('submit' , function(e){
+  document.getElementsByClassName("submit").disabled = true;
   jQuery('#submit').attr("value","Please wait...");
   jQuery('#submit').css("background","#9099f0ce");
-  document.getElementsByClassName("submit").disabled = true;
+  
   
   jQuery.ajax({
     
@@ -34,9 +35,10 @@ jQuery('#contactform').on('submit' , function(e){
     success: function(result){
       
       
-      document.getElementsByClassName("submit").disabled = false;
+      
       jQuery('#submit').css("background","#4154f1");
       jQuery('#submit').attr("value","Send message");
+      document.getElementsByClassName("submit").disabled = false;
       
 
   } 
