@@ -24,7 +24,7 @@ $(document).ready(function() {
 jQuery('#contactform').on('submit' , function(e){
   jQuery('#submit').attr("value","Please wait...");
   document.getElementsByClassName("submit").disabled = true;
-  document.getElementsByClassName("submit").style("background","#9099f0ce");
+  jQuery('#submit').css("background","#9099f0ce");
   jQuery.ajax({
     
     url:'https://safe-fortress-41631.herokuapp.com/datasend.php',
