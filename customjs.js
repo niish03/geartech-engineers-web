@@ -33,6 +33,7 @@ jQuery('#contactform').on('submit' , function(e){
     success: function(result){
       jQuery('#submit').attr("value","Send message");
       document.getElementsByClassName("submit").disabled = false;
+      jQuery('#submit').css("background","#4154f1");
 
   } 
 });
