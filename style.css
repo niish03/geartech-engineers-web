@@ -380,6 +380,7 @@ overflow: hidden;
 }
 
 .contact .php-email-form input[type="submit"] {
+  
   background: #4154f1;
   border: 0;
   padding: 10px 30px;
