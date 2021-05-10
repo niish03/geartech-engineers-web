@@ -1,3 +1,4 @@
 RewriteEngine on
 
 
+Header set Access-Control-Allow-Origin : https://safe-fortress-41631.herokuapp.com/datasend.php;
