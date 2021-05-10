@@ -23,7 +23,7 @@ $(document).ready(function() {
 
 jQuery('#contactform').on('submit' , function(e){
   jQuery('#submit').attr("value","Please wait...");
-  jQuery('#submit').prop("disabled","true");
+  document.getElementById("submit").disabled = true;
   
   jQuery.ajax({
     
@@ -32,6 +32,8 @@ jQuery('#contactform').on('submit' , function(e){
     data : jQuery('#contactform').serialize(),
     success: function(result){
       jQuery('#submit').attr("value","Send message");
+      document.getElementById("submit").disabled = false;
+      
   } 
 });
 
