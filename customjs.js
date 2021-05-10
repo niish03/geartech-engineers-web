@@ -28,7 +28,6 @@ jQuery('#contactform').on('submit' , function(e){
     url:'https://safe-fortress-41631.herokuapp.com/datasend.php',
     type:'post', 
     data : jQuery('#contactform').serialize(),
-    beforeSend: jQuery('#submit').attr("value","Please wait..."),
     success: function(result){
      
   } 
