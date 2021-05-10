@@ -23,8 +23,9 @@ $(document).ready(function() {
 
 jQuery('#contactform').on('submit' , function(e){
   jQuery('#submit').attr("value","Please wait...");
-  document.getElementsByClassName("submit").disabled = true;
   jQuery('#submit').css("background","#9099f0ce");
+  document.getElementsByClassName("submit").disabled = true;
+  
   jQuery.ajax({
     
     url:'https://safe-fortress-41631.herokuapp.com/datasend.php',
@@ -32,9 +33,9 @@ jQuery('#contactform').on('submit' , function(e){
     data : jQuery('#contactform').serialize(),
     success: function(result){
       jQuery('#submit').attr("value","Send message");
-      jQuery('#submit').css("background","#4154f1");
-      document.getElementsByClassName("submit").disabled = false;
       
+      document.getElementsByClassName("submit").disabled = false;
+      jQuery('#submit').css("background","#4154f1");
       
 
   } 
