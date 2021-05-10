@@ -34,6 +34,7 @@ jQuery('#contactform').on('submit' , function(e){
       
       jQuery('#submit').attr("value","Send message");
       jQuery('#submit').css("background","#4154f1");
+      document.getElementsByClassName("sent-message").style("display","block");
 
   } 
 });
