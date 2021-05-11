@@ -618,3 +618,78 @@ overflow: hidden;
 }
 
 @media (max-width: 768px) {}
+
+
+/* Get quote css start*/
+
+.container-gq{
+  background: rgb(6, 50, 116);
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 85vw;
+  border-radius: 0.4rem;
+  
+}
+
+
+.container-gq .row{
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+.white-container{
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.4rem;
+}
+
+.details i{
+  color:#2f71f3;
+}
+.details p{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: white;
+}
+
+
+.getquote input,textarea{
+  margin-bottom: 1rem;
+}
+
+.getquote input[type="submit"] {
+  background: #4154f1;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.getquote input[type="submit"]:hover {
+  background: #5969f3;
+}
+
+#custom-button {
+  padding: 5px;
+  color: white;
+  background-color: #009578;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#custom-button:hover {
+  background-color: #00b28f;
+}
+
+#custom-text {
+  margin-left: 10px;
+  font-family: sans-serif;
+  color: #aaa;
+}
