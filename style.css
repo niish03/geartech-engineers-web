@@ -30,12 +30,12 @@ body {
   margin: 1rem auto auto auto;
   user-select: none;
   overflow-x: hidden !important;
-  
+
 }
 
 
 
-.logo{
+.logo {
   max-height: 48px;
 }
 
@@ -98,7 +98,7 @@ body {
 
 .custom-img {
   max-width: 70%;
-  
+
 }
 
 
@@ -109,9 +109,9 @@ body {
   position: relative;
 }
 
-.timeline{
- text-align: center;
- margin-top: 5rem;
+.timeline {
+  text-align: center;
+  margin-top: 5rem;
 
 }
 
@@ -120,6 +120,7 @@ body {
 .timelinegraph ul li .time h4 {
   font-size: 0.8rem;
 }
+
 .timelinegraph ul li .content h4 {
   font-size: 1rem;
 }
@@ -153,7 +154,7 @@ body {
   position: relative;
   width: 50%;
   padding: 20px 20px;
-  
+
   box-sizing: border-box;
 }
 
@@ -209,7 +210,7 @@ body {
 
 }
 
-.hours-calc{
+.hours-calc {
   padding-top: 5rem;
   display: flex;
   justify-content: center;
@@ -217,19 +218,20 @@ body {
   overflow: hidden;
 }
 
-.hours-container{
+.hours-container {
   display: flex;
   justify-content: center;
   justify-items: center;
   overflow: hidden;
 }
-.card{
+
+.card {
   width: 160px !important;
   height: 180px;
-overflow: hidden;
-  margin:2rem;
+  overflow: hidden;
+  margin: 2rem;
   padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.030) 0px 0px 20px 5px ;
+  box-shadow: rgba(0, 0, 0, 0.030) 0px 0px 20px 5px;
   border: none;
   display: flex;
   flex-direction: column;
@@ -237,38 +239,40 @@ overflow: hidden;
   align-items: center;
 }
 
-.card-rect{
+.card-rect {
   width: 300px;
   height: 90px;
   margin: 1rem;
-overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.030) 0px 0px 20px 5px ;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.030) 0px 0px 20px 5px;
   border: none;
   display: flex;
-  
+
   justify-content: start;
   align-items: center;
 }
 
-.card-rect i{
-  border-radius: 0.2rem; color: black; background-color: rgba(100, 133, 241, 0.199);
+.card-rect i {
+  border-radius: 0.2rem;
+  color: black;
+  background-color: rgba(100, 133, 241, 0.199);
   transition: 0.3s;
 }
 
 
 .card-rect:hover i {
-background: rgb(100, 133, 241);
-color: white;
-transition: 0.3s;
+  background: rgb(100, 133, 241);
+  color: white;
+  transition: 0.3s;
 }
 
-.product-card{
+.product-card {
   width: 250px;
   height: 400px;
   border-radius: 0.5rem;
   margin: 1rem;
-overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.068) 0px 0px 20px 5px ;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.068) 0px 0px 20px 5px;
   border: none;
   display: flex;
   flex-direction: column;
@@ -277,22 +281,22 @@ overflow: hidden;
   transition: 0.2s;
 }
 
-.product-card:hover{
+.product-card:hover {
   transform: scale(1.05);
 }
 
-.product-img{
+.product-img {
   width: 280px;
-  
+
 }
 
-.profile-card{
+.profile-card {
   width: 250px;
-  
+
   border-radius: 0.5rem;
   margin: 1rem;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.068) 0px 0px 20px 5px ;
+  box-shadow: rgba(0, 0, 0, 0.068) 0px 0px 20px 5px;
   border: none;
   display: flex;
   flex-direction: column;
@@ -301,7 +305,7 @@ overflow: hidden;
   transition: 0.2s;
 }
 
-.profile-card:hover{
+.profile-card:hover {
   transform: scale(1.05);
 }
 
@@ -337,7 +341,7 @@ overflow: hidden;
   height: 100%;
 }
 
- .error-message {
+.error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -360,16 +364,19 @@ overflow: hidden;
 
 
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 0;
 }
 
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
   border-color: #4154f1;
 }
+
 .contact .php-email-form input {
 
   padding: 10px 15px;
@@ -380,7 +387,7 @@ overflow: hidden;
 }
 
 .submit {
-  
+
   background: #4154f1;
   border: 0;
   padding: 10px 30px;
@@ -395,11 +402,11 @@ overflow: hidden;
 
 
 .footer {
-  
+
   background: #f6f9ff;
   padding: 0 0 30px 0;
   font-size: 14px;
-  
+
 }
 
 
@@ -424,7 +431,7 @@ overflow: hidden;
 }
 
 .footer .footer-top .footer-info .logo {
-  
+
   margin-bottom: 15px;
 
 }
@@ -437,15 +444,15 @@ overflow: hidden;
 .footer .footer-top .footer-info .logo span {
   font-size: 1.8rem;
   font-weight: 700;
-  
+
   color: #012970;
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
-  
+
 }
 
 .footer .footer-top .footer-info p {
-    text-align: justify;
+  text-align: justify;
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
@@ -465,7 +472,7 @@ overflow: hidden;
 
 .footer .footer-top .footer-links {
   margin-bottom: 30px;
-  
+
 }
 
 .footer .footer-top .footer-links ul {
@@ -474,7 +481,7 @@ overflow: hidden;
   margin: 0;
 }
 
-.footer .footer-top .footer-links ul  i {
+.footer .footer-top .footer-links ul i {
   padding-right: 2px;
   color: #d0d4fc;
   font-size: 12px;
@@ -504,7 +511,7 @@ overflow: hidden;
 }
 
 .footer .footer-top .footer-contact p {
-  user-select:text;
+  user-select: text;
   line-height: 26px;
 }
 
@@ -573,47 +580,47 @@ overflow: hidden;
 
 @media (max-width: 1000px) {
   html {
-      font-size: 85%;
+    font-size: 85%;
   }
 
-  
+
 }
 
 @media (max-width:450px) {
 
   .wavesvg {
-      background-image: url(images/wave.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 22vh;
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: 1;
+    background-image: url(images/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 22vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
 
   }
 
   .navbar-brand {
-      font-family: larsseit;
-      font-size: larger;
+    font-family: larsseit;
+    font-size: larger;
   }
 
   .lottie-player lottie-player {
-      width: 18rem !important;
-      height: 18rem !important;
+    width: 18rem !important;
+    height: 18rem !important;
   }
 
   .reduce-h2 {
-      font-size: 2.4rem !important;
+    font-size: 2.4rem !important;
   }
 
   .reduce-h4 {
-      font-size: 1rem !important;
+    font-size: 1rem !important;
   }
 
-  .logo{
-      max-height: 25px;
+  .logo {
+    max-height: 25px;
   }
 }
 
@@ -622,34 +629,35 @@ overflow: hidden;
 
 /* Get quote css start*/
 
-.container-gq{
+.container-gq {
   background: rgb(6, 50, 116);
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 85vw;
   border-radius: 0.4rem;
-  
+
 }
 
 
-.container-gq .row{
+.container-gq .row {
   display: flex;
   justify-content: center;
 
-  
+
 }
 
-.white-container{
+.white-container {
   background-color: white;
   padding: 2rem;
   border-radius: 0.4rem;
 }
 
-.details i{
-  color:#2f71f3;
+.details i {
+  color: #2f71f3;
 }
-.details p{
+
+.details p {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -657,7 +665,8 @@ overflow: hidden;
 }
 
 
-.getquote input,textarea{
+.getquote input,
+textarea {
   margin-bottom: 1rem;
 }
 
