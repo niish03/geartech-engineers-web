@@ -337,7 +337,7 @@ overflow: hidden;
   height: 100%;
 }
 
-.contact .php-email-form .error-message {
+ .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -379,7 +379,7 @@ overflow: hidden;
   padding: 12px 15px;
 }
 
-.contact .php-email-form input[type="submit"] {
+.submit {
   
   background: #4154f1;
   border: 0;
@@ -389,7 +389,7 @@ overflow: hidden;
   border-radius: 4px;
 }
 
-.contact .php-email-form input[type="submit"]:hover {
+.submit:hover {
   background: #5969f3;
 }
 

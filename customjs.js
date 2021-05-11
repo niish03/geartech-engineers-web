@@ -21,32 +21,6 @@ $(document).ready(function() {
   });  
 });
 
-jQuery('#contactform').on('submit' , function(e){
-  jQuery('#submit').css("background","#9099f0ce");
-  jQuery('#submit').attr("value","Please wait...");
-  
-  
-  jQuery.ajax({
-    
-    url:'https://safe-fortress-41631.herokuapp.com/datasend.php',
-    type:'post', 
-    data : jQuery('#contactform').serialize(),
-    success: function(result){
-      
-      jQuery('#submit').attr("value","Send message");
-      jQuery('#submit').css("background","#4154f1");
-      
-      
-        $('#sent-message').css("display","block").delay(6000).fadeOut(300);
-        $('#contactform').trigger("reset");
-    
-
-  } 
-});
-
-e.preventDefault();
-});
-
 const onscroll = (el, listener) => {
   el.addEventListener('scroll', listener)
 }

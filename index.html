@@ -513,27 +513,28 @@
             <div class="row gy-4">
 
               <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
               </div>
 
               <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
               </div>
 
               <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
               </div>
 
               <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" id="message" rows="6" placeholder="Message" required></textarea>
               </div>
 
               <div class="col-md-12 text-center">
                
-                
                 <div class="sent-message" id="sent-message">Your message has been sent. Thank you!</div>
+                <div class="error-message" id="error-message">Opps ! some error occured. Try again</div>
+                
 
-                <input class="submit" id="submit" type="submit" value="Send message"></input>
+                <input class="submit" id="submit" type="button" value="Send message"></input>
                 
               </div>
 
@@ -616,6 +617,93 @@
 
   <script src="vendors/purecounter.js"></script>
 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCnw4FXNyCWkMWieeNjlPjAyQGyunLFS0M",
+    authDomain: "geartech-engineers.firebaseapp.com",
+    databaseURL: "https://geartech-engineers-default-rtdb.firebaseio.com",
+    projectId: "geartech-engineers",
+    storageBucket: "geartech-engineers.appspot.com",
+    messagingSenderId: "671120438250",
+    appId: "1:671120438250:web:f8317eb72cee8c3a457893",
+    measurementId: "G-DDSB57H2TG"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  function Ready() {
+    name = document.getElementById('name').value;
+    email = document.getElementById('email').value;
+    subject = document.getElementById('subject').value;
+    message = document.getElementById('message').value;
+  }
+
+document.getElementById('submit').onclick = function(){
+  document.getElementById('submit').disabled = true;
+  jQuery('#submit').css("background","#9099f0ce");
+  jQuery('#submit').attr("value","Please wait...");
+
+  Ready();
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth()+1 ;
+  var yyyy = today.getFullYear();
+
+  if(dd<10) dd='0'+dd;
+  if(mm<10) mm='0'+mm;
+var sp = "-"
+  var finaldate = dd+sp+mm+sp+yyyy;
+
+  var hh =today.getHours();
+  var min= today.getMinutes();
+  var ss = today.getSeconds();
+
+  if(hh<10) hh='0'+hh;
+  if(min<10) min='0'+min;
+  if(ss<10) ss='0'+ss;
+  var spt = ":"
+  var finaltime= hh+spt+min+spt+ss;
+  //var currenttime = (time.getUTCHours +1)  + (time.getUTCMinutes +1) + (time.getUTCSeconds +1);
+console.log(finaldate);
+console.log(finaltime);
+  firebase.database().ref('Contactus/' + finaldate + '/' + finaltime).set(
+    
+  {
+    Name : name,
+    Email : email,
+    Subject : subject,
+    Message : message
+  }, (error) => {
+    if(error){
+      $('#error-message').css("display","block").delay(9000).fadeOut(300);
+    }
+    else{
+      document.getElementById('submit').disabled = false;
+      jQuery('#submit').attr("value","Send message");
+      jQuery('#submit').css("background","#4154f1");
+      
+      
+        $('#sent-message').css("display","block").delay(6000).fadeOut(300);
+        $('#contactform').trigger("reset");
+    
+    }
+  });
+}
+  
+</script>
 
 </body>
 
