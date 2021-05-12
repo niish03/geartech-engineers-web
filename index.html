@@ -541,7 +541,7 @@
                 <div class="error-message" id="error-message">Opps ! some error occured. Try again</div>
 
 
-                <input class="submit" id="submit" type="button" value="Send message"></input>
+                <button class="submit" id="submit" type="submit" value="Send message">Send message</input>
 
               </div>
 
@@ -665,7 +665,10 @@
       message = document.getElementById('message').value;
     }
 
-    document.getElementById('submit').onclick = function () {
+    document.getElementById('submit').onclick = function (e) {
+      
+      if(document.getElementById('name').value != "" && document.getElementById('email').value != "" && document.getElementById('subject').value != "" && document.getElementById('message').value != "") 
+      {
       document.getElementById('submit').disabled = true;
       jQuery('#submit').css("background", "#9099f0ce");
       jQuery('#submit').attr("value", "Please wait...");
@@ -714,6 +717,11 @@
 
           }
         });
+     }
+
+      
+     
+       
     }
   </script>
 

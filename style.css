@@ -377,6 +377,10 @@ body {
   border-color: #4154f1;
 }
 
+.require-field{
+  border-color: #f02929;
+}
+
 .contact .php-email-form input {
 
   padding: 10px 15px;
@@ -670,7 +674,7 @@ textarea {
   margin-bottom: 1rem;
 }
 
-.getquote input[type="submit"] {
+.submit-gq {
   background: #4154f1;
   border: 0;
   padding: 10px 30px;
@@ -680,11 +684,12 @@ textarea {
   margin-top: 1rem;
 }
 
-.getquote input[type="submit"]:hover {
+.submit-gq:hover {
   background: #5969f3;
 }
 
 #custom-button {
+  margin-bottom: 0.5rem;
   padding: 5px;
   color: white;
   background-color: #009578;
