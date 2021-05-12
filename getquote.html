@@ -65,7 +65,7 @@
 
 
             <input type="text" class="form-control" id="email" placeholder="Email" required >
-            <input type="number" class="form-control" id="phone" placeholder="Phone" minlength="10" maxlength="13"  required>
+            <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="form-control" id="phone" placeholder="Phone" minlength="10" maxlength="13"  required>
             <p class="subfont m-0" style="color: rgb(24, 24, 24);">Please describe your gear in as much detail as you
               can, including pitch, number of teeth, angle and hardness:</p>
             <textarea class="form-control mt-0" placeholder="Message" id="message" rows="6" required></textarea>
